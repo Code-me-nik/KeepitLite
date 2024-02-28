@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> KeepItLite </title>
+
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <!-- all styling -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <section id="homesection">
+
+    <nav>
+        <button class="navtoggle" type="button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      <div class="navbrand">
+        <img src="/images/notes logo.png" alt="">
+        <span class="brandname">Note Me</span>
+      </div>
+
+      <div class="navsearchbar">
+        <button type="button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input type="text" placeholder="Search..">
+      </div>
+
+      <div class="navthreebuttons">
+        <button type="button">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+        <button type="button">
+          <i class="fa-solid fa-list"></i>
+        </button>
+        <button type="button">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </div>
+
+      <div class="navsignin">
+        <button type="button">
+          <img src="/images/signimage.jpe g" alt="sign image">
+        </button>
+      </div>
+    </nav>
+
+  <div class="notetaking">
+    <input placeholder="Title..." class='title' type="text">
+    <input placeholder="Take a note..." class='note' type="text">
+    <button class="add"> + </button>  
+  </div>
+
+
+  <figure>
+  <figcaption> other </figcaption>
+<div id="notesground" class="allnotes"></div>
+</figure>
+
+
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>

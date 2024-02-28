@@ -1,0 +1,163 @@
+:root{
+   --colorone:white;
+   --colortwo:rgb(123, 123, 123);
+   --colorthree:rgb(242, 216, 101);
+   --colorfour:rgb(239, 239, 239);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* nav bar styling */
+nav {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 50px 100px 54% 20% auto;
+  grid-template-rows:50px;
+  align-items: center;
+  justify-content: space-around ;
+}
+.navtoggle{
+  width:40px;
+  height:40px;
+  font-size:25px;
+  background-color: var(--colorone);
+  color:var(--colortwo);
+  border:0;
+}
+.navbrand{
+  display: flex ;
+  justify-content: space-around ;
+  align-items: center ;
+  font-weight: bold;
+  color:var(--colortwo);
+}
+.navsearchbar{
+  height:45px;
+  display: flex ;
+  justify-content: center;
+  align-items: center ;
+  color:var(--colortwo);
+  background-color: var(--colorfour);
+  border-radius:10px;
+}
+.navsearchbar button{
+  width:40px;
+  height:40px;
+  background-color:var(--colorfour);
+  border:0;
+  color:var(--colortwo);
+}
+.navsearchbar input{
+  width:90%;
+  height:40px;
+  background-color:var(--colorfour);
+  border:0;
+}
+.navthreebuttons{
+  display: flex ;
+  justify-content: space-evenly;
+  align-items: center ;
+}
+.navthreebuttons button{
+  width:40px;
+  height:40px;
+  background-color: white;
+  font-size:18px;
+  color:var(--colortwo);
+  border:0;
+}
+
+.navsignin img{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+}
+.navsignin button{
+  background-color:white;
+  border:0;
+}
+
+.notetaking{
+  height:100px;
+  width:600px;
+  padding: 10px;
+  border-radius:10px;
+  display: grid ;
+  justify-content: space-evenly ;
+  align-items: center ;
+  grid-template-columns: 90% 10% ;
+  grid-template-rows:50px 50px ;
+  margin:50px auto;
+  -webkit-box-shadow:10px 10px 25px 4px rgba(62,66,66,0.22);
+-moz-box-shadow: 10px 10px 25px 4px rgba(62,66,66,0.22);
+box-shadow: 10px 10px 25px 4px rgba(62,66,66,0.22);
+}
+
+.notetaking input{
+  font-weight: bold;
+  height:30px;
+  border:0;
+}
+.title{
+  grid-column:1/2;
+  grid-row:1/2;
+}
+.note{
+  grid-column:1/2;
+  grid-row:2/3;
+}
+.add{
+  font-size:20px;
+  background-color: var(--colorone);
+  border:0;
+  grid-column:2/3;
+  grid-row:1/3;
+}
+figcaption{
+  text-align: center ;
+}
+
+#notesground{
+  height:380px;
+  width:95%;
+  margin:20px auto;
+  color:var(--colortwo);
+  letter-spacing: 1px ;
+  font-size:14px;
+  display: flex ;
+  justify-content: space-evenly ;
+  align-items: space-around;
+  padding:10px;
+  justify-content: space-evenly ;
+  align-items: space-evenly;
+}
+#notesground h4{
+  text-transform: uppercase;
+}
+
+.notediv{
+  width:200px;
+  height:250px;
+  border-radius: 10px;
+  border:1px solid var(--colorfour);
+  transition:all .3s linear;
+  padding:5px;
+}
+
+.notediv:hover{
+  -webkit-box-shadow:10px 10px 25px 4px rgba(62,66,66,0.22);
+  -moz-box-shadow: 10px 10px 25px 4px rgba(62,66,66,0.22);
+  box-shadow: 10px 10px 25px 4px rgba(62,66,66,0.22);
+}
+.notediv h5{
+  font-size:17px;
+  text-transform: capitalize ;
+}
+.notediv p{
+  font-size:15px;
+
+}
